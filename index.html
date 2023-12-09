@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <script src="https://kit.fontawesome.com/67881841d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="container-aside">
+            <div class="header">
+                <div class="details">
+                   <img src="photo/book.jpg" class="image" alt=""this is an image>
+                   <h3 class="username">Shaziya Ansari</h3>
+                   <div class="socialbox">
+                    <!-- <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a> -->
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/shaziya_ansari24" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shaziya-ansari-516460208/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                   </div>   
+                </div>
+            </div>
+            <div class="aside-main">
+                <div class="menu">
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-house"></i><span class="menu-label">Home</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-user"></i><span class="menu-label">About</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/photo/Shaziya-resume.pdf" class="menu-btn"><i class="fa-solid fa-file"></i></i><span class="menu-label">Resume</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-book"></i><span class="menu-label">Portfolio</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-database"></i><span class="menu-label">Services</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-phone"></i><span class="menu-label">Contact</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-footer">
+                <p class="footer-label">&#169; Copyright <strong>Shaziya Ansari</strong></p>
+                <p class="footer-label-info">Designed by<strong>Shaziya Ansari</strong></p>
+            </div>
+        </aside>
+        <main class="container-main">
+            <div class="bg-filter">
+                <h1 class="main-title" id ="inform">Shaziya Ansari</h1>
+                <p class="profession"  id ="inform">I'm a Developer.</p>
+                <button class="main-showMenu" onclick="ShowMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </main>
+    </div>
+    <script>
+        function ShowMenu(){
+            let menu=document.querySelector(".container-aside"),
+            btnShowMenu=document.querySelector(".main-showMenu");
+            menu.classList.toggle("showMenu");
+            if(btnShowMenu.innerHTML==="<i class=\"fa-solid fa-bars\"></i>"){
+              btnShowMenu.innerHTML="<i class=\"fa-solid fa-xmark-large\"></i>";}
+            else{
+              btnShowMenu.innerHTML="<i class=\"fa-solid fa-bars\"></i>";}
+        }
+    </script>
+</body>
+</html>
